@@ -1,0 +1,3 @@
+/home/rizo/edu/agla/gauss_seidel/cmake-build-debug/CMakeFiles/gauss_seidel.dir
+/home/rizo/edu/agla/gauss_seidel/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rizo/edu/agla/gauss_seidel/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+/home/rizo/edu/agla/jacobi/cmake-build-debug/CMakeFiles/jacobi.dir
+/home/rizo/edu/agla/jacobi/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rizo/edu/agla/jacobi/cmake-build-debug/CMakeFiles/rebuild_cache.dir
