@@ -224,8 +224,7 @@ int main() {
     cin >> m;
 
     vector<pair<int, int>> points = vector<pair<int, int>>();
-    int x, y;
-
+    double x, y;
     //read points
     for (int i = 0; i < m; ++i) {
         cin >> x >> y;
@@ -241,9 +240,10 @@ int main() {
 
     // construct matrices A and b
     for (int i = 0; i < m; ++i) {
+
         x = points[i].first;
         y = points[i].second;
-        for (int j = 0; j <= degree; ++j) {
+        for (int j = 0; j < A.getColumns(); ++j) {
             A(i, j) = pow(x, j);
         }
 
@@ -253,8 +253,11 @@ int main() {
     cout << "A: " << endl;
     A.printM();
 
-    cout << "A_T*A:" << endl;
     Matrix A_T = A.transpose(A);
+    cout << "A_T:" << endl;
+
+    A_T.printM();
+    cout << "A_T*A:" << endl;
     Matrix ATA = (A_T*A);
     ATA.printM();
 
@@ -280,23 +283,19 @@ int main() {
 
     if (pipe != NULL) {
 
-        fprintf(pipe, "plot [-10 : 10] [-10: 10] %lf*x + %lf, '-' using 1:2 with points\n", xRes(1, 0), xRes(0, 0));
+        ::fprintf(pipe, "%s\n", "plot '-' using 1:2 title 'graph' with lines");
+
         for (int i = 0; i < npoints; ++i) {
             x1 = -5 + i*step;
-            y1 = xRes(0, 0);
-            for (int j = 1; j < xRes.getRows(); ++j) {
-                y1 += x1 * xRes(j, 0);
+            for (int j = 0; j < xRes.getRows(); ++j) {
+                y1 += pow(x1, j) * xRes(j, 0);
             }
             cout << x1 << " " << y1 << endl;
             fprintf(pipe, "%f\t%f\n", x1, y1);
+            y1 = 0.0;
         }
-
-        ::fprintf(pipe, "%s\n", "e");
         fflush(pipe);
 
-        cin.clear();
-        cin.ignore(cin.rdbuf()->in_avail());
-        cin.get();
 
         pclose(pipe);
     } else {

@@ -1,0 +1,3 @@
+/home/rizo/edu/agla/yehia/cmake-build-debug/CMakeFiles/yehia.dir
+/home/rizo/edu/agla/yehia/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rizo/edu/agla/yehia/cmake-build-debug/CMakeFiles/rebuild_cache.dir
