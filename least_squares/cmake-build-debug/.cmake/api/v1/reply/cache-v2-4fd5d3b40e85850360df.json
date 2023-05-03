@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/rizo/edu/agla/jacobi/cmake-build-debug"
+			"value" : "/home/rizo/edu/agla/least_squares/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/234/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/snap/clion/235/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/234/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/snap/clion/235/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/234/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/snap/clion/235/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/rizo/edu/agla/jacobi/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/rizo/edu/agla/least_squares/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/rizo/edu/agla/jacobi"
+			"value" : "/home/rizo/edu/agla/least_squares"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -655,7 +655,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/snap/clion/234/bin/ninja/linux/x64/ninja"
+			"value" : "/snap/clion/235/bin/ninja/linux/x64/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "jacobi"
+			"value" : "least_squares"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/234/bin/cmake/linux/x64/share/cmake-3.25"
+			"value" : "/snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1138,7 +1138,7 @@
 			"value" : "TRUE"
 		},
 		{
-			"name" : "jacobi_BINARY_DIR",
+			"name" : "least_squares_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1147,10 +1147,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/rizo/edu/agla/jacobi/cmake-build-debug"
+			"value" : "/home/rizo/edu/agla/least_squares/cmake-build-debug"
 		},
 		{
-			"name" : "jacobi_IS_TOP_LEVEL",
+			"name" : "least_squares_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1162,7 +1162,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "jacobi_SOURCE_DIR",
+			"name" : "least_squares_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1171,7 +1171,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/rizo/edu/agla/jacobi"
+			"value" : "/home/rizo/edu/agla/least_squares"
 		}
 	],
 	"kind" : "cache",
