@@ -55,12 +55,23 @@ int main() {
     FILE* pipe = popen(GNUPLOT_NAME, "w");
 
     if (pipe != NULL) {
-        fprintf(pipe, "set xlabel 'Fox population'\n");
+        /*fprintf(pipe, "set xlabel 'Fox population'\n");
+        fprintf(pipe, "set ylabel 'Rabbit population'\n");
+
+
+        fprintf(pipe, "%s\n", "plot '-' using 1:2 title 'Rabbit' with lines");
+
+        for (int i = 0; i < time.size(); ++i) {
+            fprintf(pipe, "%f\t%f\n", killerPopulation[i], victimPopulation[i]);
+        }*/
+
+
+        fprintf(pipe, "set xlabel 'Time'\n");
         fprintf(pipe, "set ylabel 'Rabbit population'\n");
         ::fprintf(pipe, "%s\n", "plot '-' using 1:2 title 'Rabbit' with lines");
 
         for (int i = 0; i < time.size(); ++i) {
-            fprintf(pipe, "%f\t%f\n", killerPopulation[i], victimPopulation[i]);
+            fprintf(pipe, "%f\t%f\n", time[i], victimPopulation[i]);
         }
 
         fflush(pipe);
