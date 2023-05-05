@@ -67,16 +67,21 @@ int main() {
 
 
         fprintf(pipe, "set xlabel 'Time'\n");
-        fprintf(pipe, "set ylabel 'Rabbit population'\n");
-        ::fprintf(pipe, "%s\n", "plot '-' using 1:2 title 'Rabbit' with lines");
+        fprintf(pipe, "set ylabel '# of animals'\n");
+        fprintf(pipe,"plot '-' using 1:2 title 'Rabbit population' with lines, '-' using 1:2 title 'Fox population' with lines\n");
 
         for (int i = 0; i < time.size(); ++i) {
             fprintf(pipe, "%f\t%f\n", time[i], victimPopulation[i]);
         }
+        ::fprintf(pipe, "%s\n", "e");
+        ::fflush(pipe);
+
+        for (int i = 0; i < time.size(); ++i) {
+            fprintf(pipe, "%f\t%f\n", time[i], killerPopulation[i]);
+        }
+        ::fprintf(pipe, "%s\n", "e");
 
         fflush(pipe);
-
-
         pclose(pipe);
     } else {
         cout << "Could not open file" << endl;
